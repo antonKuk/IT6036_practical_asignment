@@ -1,0 +1,51 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+<div class="card">
+    <h5 class="card-header">
+        {{ tour.tour_name|capfirst }}
+    </h5>
+
+    <div class="card-body">
+        <h5 class="card-title">
+            Description
+        </h5>
+        <p class="card-text">
+            {{ tour.description }}
+        </p>
+
+        <h5 class="card-title">
+            Duration
+        </h5>
+        <p class="card-text">
+            {{ tour.duration }}
+        </p>
+
+        <h5 class="card-title">
+            Available
+        </h5>
+        <p class="card-text">
+            {{ tour.available }}
+        </p>
+
+        <h5 class="card-title">
+            Agent
+        </h5>
+        <p class="card-text">
+            {{ tour.agent }}
+                <br><br>
+                {% for group in request.user.groups.all %}
+                    {% if group.name == 'agents' or group.name == 'management' or group.name == 'administrators' %}
+                        <a href="{% url 'tour_edit' tour.pk %}" class="nav-link">
+                            <strong>edit tour data</strong> 
+                        </a>
+                        <br><br>
+                         <a href="{% url 'tour_delete' tour.pk %}" class="nav-link">
+                         <strong>delete tour</strong> 
+                        </a>
+                    {% endif %}
+                {% endfor %}        
+        </p>
+    </div>
+</div>
+{% endblock %}

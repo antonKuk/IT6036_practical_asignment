@@ -1,0 +1,30 @@
+Username and password  guidelines
+
+Username:
+    It has to have more than 4 and less than 150 characters.
+    Can contain any letters or numbers.
+    Can contain some special characters, including @ (at sign) . (period) - (hyphen or dash) _ (underscore).
+    Cannot contain spaces or non-English characters (such as é)
+
+
+Password:
+"Hackers often bypass some of the best security technologies by exploiting one of the oldest tricks in the book, 
+your password.  Not only will attackers quickly gain access to whatever you have access to, audits and security 
+monitoring will detect show that you accessed the documents, not the attacker so you will be the one to account 
+for inappropriate use of company resources or access of data.  So what can you do to prevent this?
+First, don’t share your password with anyone.  Not your co-workers, secretary, spouse, or even your dog.  
+Your password should be for your eyes only.  Also, avoid group or departmental accounts that are shared among 
+several people.  Have system administrators create an individual account for each person that accesses a system.
+  Next, change your password often and follow these guidelines to create a secure password:"
+  (ref: Vanderburg, E. (2020, September 12). Guidelines for username and password risk management. 
+  TCDI. Retrieved June 30, 2022, from https://www.tcdi.com/guidelines-for-username-and-password-risk-management/ )
+
+    Your password can’t be too similar to your other personal information.
+    Your password must contain at least 8 characters.
+    Your password can’t be a commonly used password.
+    Your password can’t be entirely numeric.
+    Must be different from your first name, last name, and username.
+    Cannot contain spaces or non-English characters (such as é).
+    Can contain any letters from a to z and any numbers from 0 through 9.
+    Must include at least one number or special character and one letter.
+    To help you easily remember your password, consider using a phrase or song to go with the acronym.

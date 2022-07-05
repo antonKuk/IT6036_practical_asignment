@@ -1,0 +1,9 @@
+One of the most common cybersecurity problems is broken access control. According to OWASP Top 10 "94% of applications were tested for some form of broken access control with the average incidence rate of 3.81%. Notable Common Weakness Enumerations (CWEs) were: Exposure of Sensitive Information to an Unauthorised Actor, Insertion of Sensitive Information Into Sent Data and Cross-Site Request Forgery."
+
+Considering our application, some privacy permissions should be implemented:
+
+Guest users should not be able to edit anybody's data
+
+Only users from "administrators" or "managers" group should be able to delete or change  user's accounts or data
+
+Users from "agents" group should only be able to create or edit only their own data

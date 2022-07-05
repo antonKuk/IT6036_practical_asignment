@@ -1,0 +1,35 @@
+*1. User Sign Up Functionality*
+
+**Conditions:**
+"Guest" user visits "sign up" page, fills up "new user form" and successfully creates an account.
+
+**Expected results:**
+No errors displayed if followed security_procedures_document.txt
+
+**Results:**
+"sign up" page loaded correctly, form displays guide information with correct username and pasword choises.
+form functions correctly, user has been created successfully.
+Note: users created this way do not have any permissions. Only administrators can add their permissions.
+
+*2. User Log In Functionality*
+
+**Conditions:**
+An existing user visits "login" page, fills up "login" form and redirects to the 'home' page.
+
+**Expected results:**
+Page loded, form  displays no errors, user has been logged in successfully.
+
+**Results:**
+Page loded, form  displays no errors, user has been logged in successfully.
+
+*3. 'Guest' user permissions.*
+
+**Conditions:**
+'Guest' user can visit 'home', 'tours', 'agents', 'agent details', 'agent tours' pages and only can view content without any "delete" or "create" functionality.
+
+**Expected results:**
+'Guest' user can view content of above pages but cannot delete or create anything
+
+**Results:**
+'home', 'tours', 'agents', 'agent details', 'agent tours' pages loaded correctly. 'Guest' user could view content of pages but could not delete or create anything.
+

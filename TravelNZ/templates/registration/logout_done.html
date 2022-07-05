@@ -1,0 +1,12 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<form class="form-signin" method="post">
+    <img class="mb-4" src="{% static 'images/logo.png' %}" alt="" width="280" height="200">
+    <h1 class="mt-5 text-xl-center">Logged out</h1>   
+    {% csrf_token %}
+    <p class="lead mt-5">Thanks for spending some quality time with the web site today.</p>
+</div>
+</form>
+{% endblock %}

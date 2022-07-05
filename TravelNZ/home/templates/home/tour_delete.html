@@ -1,0 +1,17 @@
+{% extends "home/base.html" %}
+
+{% block content %}
+<div class="card">
+    <h3 class="card-header">
+        Delete Tour
+    </h3>
+
+    <div class="card-body">
+        <form action="" method="post">
+            {% csrf_token %}
+            <p>Are you sure you want to delete "{{ tour.tour_name }}"?</p>
+            <input type="submit" value="delete">
+        </form>
+    </div>
+</div>
+{% endblock %}

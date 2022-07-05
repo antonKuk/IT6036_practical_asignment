@@ -1,0 +1,27 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block content %}
+<div class="card">
+    <h3 class="card-header">
+        Author Details
+    </h3>
+    <h5 class="card-header">
+        {{ author.name|capfirst }}
+    </h5>
+
+    <div class="card-body">
+        <p class="card-text">  
+            {% for group in request.user.groups.all %}
+                {% if group.name == 'authors' %}
+                    <a href="{% url 'agent_edit' agent.pk %}">edit agent details</a>
+                    {% comment %} <a href="{% url 'agent_delete' agent.id %} class="nav-link"">delete agent details</a> {% endcomment %}
+                {% endif %}
+            {% endfor %}
+            <br>
+            <a href="{% url '' author.pk %}">
+                <strong>view author recipes</strong> 
+            </a>
+        </p>
+    </div>
+</div>
+{% endblock content%}
