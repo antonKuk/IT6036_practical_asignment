@@ -69,14 +69,17 @@
                                     Logout
                                 </a>
                             </li>
-                        </ul> 
-                        <ul class="navbar-nav">
                             <li class="nav-item me-2">
-                                {% comment %} <a class="nav-link" href="{% url 'accounts/password_change/' %}"> {% endcomment %}
-                                    change_password
+                                <a class="nav-link" href="{% url 'password_change' %}">
+                                    change pasword
                                 </a>
                             </li>
-                        </ul>
+                            <li class="nav-item me-2">
+                                <a class="nav-link" href="{% url 'password_reset' %}">
+                                    reset pasword
+                                </a>
+                            </li>
+                        </ul> 
                         {% else %}
                         <ul class="navbar-nav">
                             <li class="nav-item me-2">

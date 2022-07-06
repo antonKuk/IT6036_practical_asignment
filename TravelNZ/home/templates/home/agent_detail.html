@@ -15,7 +15,7 @@
             {% for group in request.user.groups.all %}
                 {% if group.name == 'authors' or group.name == 'administrators' or group.name == 'management' %}
                     <a href="{% url 'agent_edit' agent.pk %}">edit agent details</a>
-                    <a href="{% url 'agent_delete' agent.id %} class="nav-link"">delete agent details</a>
+                    {% comment %} <a href="{% url 'agent_delete' agent.id %} class="nav-link"">delete agent details</a> {% endcomment %}
                 {% endif %}
             {% endfor %}
             <br>
