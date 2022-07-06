@@ -3,23 +3,24 @@
 {% block content %}
 <div class="card">
     <h3 class="card-header">
-        Author Details
+        Agent Details
     </h3>
     <h5 class="card-header">
-        {{ author.name|capfirst }}
+        {{ agent.first_name|capfirst }} {{ agent.last_name|capfirst }}
+
     </h5>
 
     <div class="card-body">
         <p class="card-text">  
             {% for group in request.user.groups.all %}
-                {% if group.name == 'authors' %}
+                {% if group.name == 'authors' or group.name == 'administrators' or group.name == 'management' %}
                     <a href="{% url 'agent_edit' agent.pk %}">edit agent details</a>
-                    {% comment %} <a href="{% url 'agent_delete' agent.id %} class="nav-link"">delete agent details</a> {% endcomment %}
+                    <a href="{% url 'agent_delete' agent.id %} class="nav-link"">delete agent details</a>
                 {% endif %}
             {% endfor %}
             <br>
-            <a href="{% url '' author.pk %}">
-                <strong>view author recipes</strong> 
+            <a href="{% url 'tours_by_agent' agent.pk %}">
+                <strong>view agent tours</strong> 
             </a>
         </p>
     </div>
